@@ -6,7 +6,7 @@ const salesController = {}
 salesController.crearpedido = async (req, res) => {
     console.log(req.body)
     let sale = req.body.data
-    if (sale.length == 0) {
+    if (Object.keys(sale).length == 0) {
         return res
             .status(400)
             .json({
