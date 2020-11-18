@@ -4,6 +4,7 @@ const respondError = require('./respondError')
 const salesController = {}
 
 salesController.crearpedido = async (req, res) => {
+    console,log(req.body)
     let sale = req.body.data
     if (sale.length == 0) {
         return res
