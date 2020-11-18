@@ -1,0 +1,25 @@
+@hostdev = http://localhost:4002/api
+
+###
+POST {{hostdev}}/sales
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhMmZjZTEwMy03NjIzLTRlNDctODk0ZS03NDU0ODZjNzMwOWMiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU0ODg5NTQsImV4cCI6MTYwNTUyMTM1NH0.L_RvXM-zTJ056Y6X_7fxs-YLKI-NnWdTy4ax1HpBXuw
+Content-Type: application/json
+
+{
+    "data": [
+        {
+       "customer_idcustomer": 1,
+       "price": 35,
+       "quantity": 10,
+       "total": 350,
+       "product_idproduct": 4
+   },
+   {
+       "customer_idcustomer": 1,
+       "price": 10,
+       "quantity": 10,
+       "total": 100,
+       "product_idproduct": 3
+   }
+    ]
+}

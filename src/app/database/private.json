@@ -1,0 +1,10 @@
+{
+    "mysql": {
+        "host": "monjasvirtual.mysql.database.azure.com",
+        "port": 3306,
+        "user": "adminmonjas@monjasvirtual",
+        "password": "mzXyUMg2021_",
+        "database": "enlafarma2"
+    }
+
+}

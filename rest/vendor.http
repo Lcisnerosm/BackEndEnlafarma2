@@ -1,0 +1,11 @@
+@hostdev = http://localhost:4002/api
+
+###
+GET {{hostdev}}/vendors
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMjA2MjU4Yi0yZjA5LTQ0MmUtYWE0NC0yOTc1NDk0MzdmYzEiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjozLCJpYXQiOjE2MDUxNTM5MTYsImV4cCI6MTYwNTE4NjMxNn0.d2-7Hd7qonpP8s1vBbOBjzqYIOOIKsv0B86_EEVWT0Q
+Content-Type: application/json
+
+###
+GET {{hostdev}}/vendors/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMjA2MjU4Yi0yZjA5LTQ0MmUtYWE0NC0yOTc1NDk0MzdmYzEiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjozLCJpYXQiOjE2MDUxNTM5MTYsImV4cCI6MTYwNTE4NjMxNn0.d2-7Hd7qonpP8s1vBbOBjzqYIOOIKsv0B86_EEVWT0Q
+Content-Type: application/json

@@ -1,0 +1,15 @@
+@hostdev = http://localhost:4002/api
+
+###
+GET {{hostdev}}/products
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhMmZjZTEwMy03NjIzLTRlNDctODk0ZS03NDU0ODZjNzMwOWMiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU0ODg5NTQsImV4cCI6MTYwNTUyMTM1NH0.L_RvXM-zTJ056Y6X_7fxs-YLKI-NnWdTy4ax1HpBXuw
+Content-Type: application/json
+
+###
+POST {{hostdev}}/products
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhMmZjZTEwMy03NjIzLTRlNDctODk0ZS03NDU0ODZjNzMwOWMiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU0ODg5NTQsImV4cCI6MTYwNTUyMTM1NH0.L_RvXM-zTJ056Y6X_7fxs-YLKI-NnWdTy4ax1HpBXuw
+Content-Type: application/json
+
+{
+    "name": "Vancomicina"
+}
