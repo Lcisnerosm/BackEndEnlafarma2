@@ -1,25 +1,25 @@
-@mylocalhost = https://devcenter.heroku.com/categories/command-line/api
+@production = https://backendenlafarma.herokuapp.com/api
 
-@mylocalhost = http://localhost:4002/api
+@localhost = http://localhost:4002/api
 
 ###
-GET {{mylocalhost}}/customers
+GET {{production}}/customers
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU2NzkxMjEsImV4cCI6MTYwNTcxMTUyMX0.LLnrvhvNlv4M0Ulz27d-8hndC_MXmVK0oKxuqAJWR8I
 Content-Type: application/json
 
 ###
-GET {{mylocalhost}}/customers/1
+GET {{production}}/customers/1
 Authorization: BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNjlmNjViNS00YWI1LTQ5YTMtOWVkMC1jNzExMDJlZTkyNDkiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoyLCJpYXQiOjE2MDU1MTI2NTgsImV4cCI6MTYwNTU0NTA1OH0.OYqqe4g0CJRs1O7myPxUAZcyrSZ1r5PpT4KXLdz1JCo
 Content-Type: application/json
 
 ###
-GET {{mylocalhost}}/customers/branch/1
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNjlmNjViNS00YWI1LTQ5YTMtOWVkMC1jNzExMDJlZTkyNDkiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoyLCJpYXQiOjE2MDU1MTI2NTgsImV4cCI6MTYwNTU0NTA1OH0.OYqqe4g0CJRs1O7myPxUAZcyrSZ1r5PpT4KXLdz1JCo
+GET {{localhost}}/customers/branch/1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU2ODMwMzIsImV4cCI6MTYwNTcxNTQzMn0.9PA7NELRFDFBlLk21ht322Ks5fq7whB-5ZtYDE6u45U
 Content-Type: application/json
 
 ###
-POST {{mylocalhost}}/customers
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU1MTI5NTIsImV4cCI6MTYwNTU0NTM1Mn0.Qpx1lDsWc3zgfs2sfOmPztFrXsz3wq_jjcZE-ws56is
+POST {{production}}/customers
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU2ODMwMzIsImV4cCI6MTYwNTcxNTQzMn0.9PA7NELRFDFBlLk21ht322Ks5fq7whB-5ZtYDE6u45U
 Content-Type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-Type: application/json
     "nit":"123456789",
     "contact":"Luis cisneros",
     "phone":"1231353",
-    "branch_idbranch":"1"
+    "branch_idbranch":"3"
 }
 
 
