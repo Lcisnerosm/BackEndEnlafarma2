@@ -1,5 +1,5 @@
 @hostdev = http://localhost:4002/api
-
+@production = https://backendenlafarma.herokuapp.com/api
 ###
 POST {{hostdev}}/sales
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhMmZjZTEwMy03NjIzLTRlNDctODk0ZS03NDU0ODZjNzMwOWMiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU0ODg5NTQsImV4cCI6MTYwNTUyMTM1NH0.L_RvXM-zTJ056Y6X_7fxs-YLKI-NnWdTy4ax1HpBXuw
@@ -23,3 +23,7 @@ Content-Type: application/json
    }
     ]
 }
+
+###
+GET {{hostdev}}/customers/sale/30
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU2ODMwMzIsImV4cCI6MTYwNTcxNTQzMn0.9PA7NELRFDFBlLk21ht322Ks5fq7whB-5ZtYDE6u45U
