@@ -1,7 +1,7 @@
 @hostdev = http://localhost:4002/api
 @production = https://backendenlafarma.herokuapp.com/api
 ###
-POST {{hostdev}}/sales
+POST {{production}}/sales
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3MzU2MzEsImV4cCI6MTYwNTc2ODAzMX0.L6usIn9uRC3RvhYk4TJd2etVxve80ZlkuS_PfyRTM_0
 Content-Type: application/json
 
