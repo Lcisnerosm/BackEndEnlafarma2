@@ -1,4 +1,5 @@
 const mysql = require('mysql')
+const { promisify }= require('util')
 
 const data = require('./private.json')
 
@@ -10,14 +11,26 @@ const conection = {
     database: data.mysql.database
 }
 
-const bdconnect = mysql.createConnection(conection)
+const bdconnect = mysql.createPool(conection)
 
-bdconnect.connect((err) => {
-    if(err){
-        console.log(`An error has occurred, error: ${err}`)
-    }else{
-        console.log('Database is connect')
+bdconnect.getConnection((err, connection) => {
+    if (err) {
+        if (err.code === errors.ConnectionLost) {
+            console.error('DATABASE CONNECTION WAS CLOSED');
+        }
+        if (err.code === errors.ManyConnection) {
+            console.error('DATABASE HAS TO MANY CONNECTION');
+        }
+        if (err.code === errors.ConnectionRefused) {
+            console.error('DATABASE CONNECTION WAS REFUSED');
+        }
     }
-})
+
+    if (connection) connection.release();
+    console.log('Conexión satisfactoria a mysql');
+    return;
+});
+
+bdconnect.query = promisify(bdconnect.query);
 
 module.exports = bdconnect
