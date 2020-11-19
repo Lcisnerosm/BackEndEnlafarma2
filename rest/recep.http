@@ -1,0 +1,9 @@
+@production = https://backendenlafarma.herokuapp.com/api
+
+@localhost = http://localhost:4002/api
+
+###
+GET {{localhost}}/recep
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3NDYxODQsImV4cCI6MTYwNTc3ODU4NH0.9thi2Dy2LIxhk13fwETiG4994-NVive5g7SOW4_Uph4
+Content-Type: application/json
+
