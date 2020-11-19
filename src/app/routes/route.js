@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const { reset } = require('nodemon')
 const branchRoute = require('./branch.route')
 const recep = require('../controllers/recep.controller')
 

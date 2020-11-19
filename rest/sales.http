@@ -1,8 +1,8 @@
 @hostdev = http://localhost:4002/api
 @production = https://backendenlafarma.herokuapp.com/api
 ###
-POST {{production}}/sales
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3MzU2MzEsImV4cCI6MTYwNTc2ODAzMX0.L6usIn9uRC3RvhYk4TJd2etVxve80ZlkuS_PfyRTM_0
+POST {{hostdev}}/sales
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3NDYxODQsImV4cCI6MTYwNTc3ODU4NH0.9thi2Dy2LIxhk13fwETiG4994-NVive5g7SOW4_Uph4
 Content-Type: application/json
 
 {
@@ -25,5 +25,5 @@ Content-Type: application/json
 }
 
 ###
-GET {{production}}/customers/sale/30
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3MzU2MzEsImV4cCI6MTYwNTc2ODAzMX0.L6usIn9uRC3RvhYk4TJd2etVxve80ZlkuS_PfyRTM_0
+GET {{hostdev}}/customers/sale/30
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MWE0OTAwOC1hZjA0LTRlZmItOTY2Zi1hY2JjMjZhZDU0MWUiLCJyb2wiOiJhZG1pbiIsImlkdmVuZG9yIjoxLCJpYXQiOjE2MDU3NDYxODQsImV4cCI6MTYwNTc3ODU4NH0.9thi2Dy2LIxhk13fwETiG4994-NVive5g7SOW4_Uph4
